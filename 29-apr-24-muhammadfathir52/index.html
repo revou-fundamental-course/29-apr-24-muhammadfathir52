@@ -1,12 +1,241 @@
 <!DOCTYPE html>
 <html>
-    
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <title>Fathir Portofolio</title>
+        <link rel="icon" href="assets/travel.jpg" type="image/x-icon">
+         <!-- ini css -->
+        <style>
+            .navigation {
+                display: flex;
+                justify-content: space-between;
+                padding-left: 22px;
+                padding-right: 22px;
+                padding-top: 10px;
+                padding-bottom: 5px;
+            }
+
+            .company-slogan {
+                text-align: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+            .login-homepage {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 50px;
+                margin-left: 100px;
+                margin-right: 100px;
+                margin-bottom: 50px;
+            }
+
+            @media  only screen and (max-width :550px) {
+                .login-homepage {
+                    flex-direction: column;
+                }
+            }
+            .login-image {
+                border: 3px solid rgb(21, 18, 18);
+                height: 400px;
+                width: 100%;
+                margin: 18px;
+            }
+
+            
+            .banner-item {
+                height: 400px;
+                width: 100%;
+                background-size: cover;
+                background-position: center;
+            }
+
+
+            .login-form {
+                font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+                border: 1px solid rgb(34, 7, 7);
+                height: 700px;
+                width: 45%;
+                text-align: center;
+                border-radius: 20px;
+                border: 0;
+                background-color: rgba(179, 142, 8, 0.68);
+            }
+
+            .login-login>input {
+                height: 25px;
+                border-radius: 5px;
+                border-color: rgb(101, 101, 24);
+            }
+
+            .login-login>button {
+                height: 25px;
+                border-radius: 5px;
+                border-color: rgb(35, 35, 18);
+            }
+
+            .our-package {
+                text-align: center;
+                background-color: aquamarine;
+                height: 80px;
+                padding: 55px;
+                font-size: 15px;
+            }
+
+            .company-slogan>h1 {
+                font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+                font-size: 250%;
+            }
+
+            .company-slogan>h3 {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 150%;
+            }
+
+            .our-package {
+                background-color:rgba(34, 182, 52, 0.879);
+                color: rgb(34, 39, 33);
+                background-size: auto;
+                font-size: 100px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .box1,
+            .box2,
+            .box3,
+            .box4,
+            .box5,
+            .box6 {
+                width: 300px;
+                height: 330px;
+                background: radial-gradient(circle at top left, transparent 300px, rgba(116, 153, 3, 0.694)), radial-gradient(circle at bottom right, transparent 300px, rgba(9, 145, 34, 0.868));
+                margin: 15px;
+                padding: 5px;
+                color: rgba(231, 241, 245, 0.927);
+                text-align: center;
+                transition: .3s ease-in-out;
+            }
+            
+
+            .box1:hover,
+            .box2:hover,
+            .box3:hover,
+            .box4:hover,
+            .box5:hover,
+            .box6:hover {
+                background-color: rgba(216, 11, 141, 0.767);
+            }
+
+            .fab {
+                margin: 1.2rem 0 .3rem 0;
+            }
+
+            h2 {
+                letter-spacing: 2px;
+                margin: 0 0 .6rem 0;
+            }
+
+            .box1 p,
+            .box2 p,
+            .box3 p
+            .box4 p,
+            .box5 p,
+            .box6 p {
+                line-height: 1.6;
+                padding: 0 10px;
+            }
+        </style>
+    </head>
+    <!-- ini html -->
+    <body style="background-image:url(assets/sunset-2469696_1280.jpg); background-size: auto;"></body>
+        <header class="navigation">
+            <div><img src="assets/travel.jpg" alt="Company logo" width="60" height="60" style="border-radius: 50%;"></div>
+          
+            <nav class="navigation-button">
+                <button>Home</button>
+                <button>Our Package</button>
+                <button>Call Us</button>
+            </nav>
+        </header>
+        <hr/>
+
+        <article class="company-slogan">
+            <h1 style="color: aqua;">My Travel</h1>
+            <h3 style="color: aqua;">Enjoy your travel life in real life</h3>
+        </article>
+
+        <form class="login-homepage">
+        <div class="login-image">
+            <div class="banner-item" style="background-image: url(assets/Pemandangan\ pantai.jpg);"></div>
+            <div class="banner-item" style="background-image: url(assets/gambar-pemandangan-alam.jpg);"></div>
+            <div class="banner-item" style="background-image: url(assets/Pemandangan_Gunung_Bromo.jpg);"></div>
+        </div>
+            <div class="login-form">
+                <header>
+                    <h1 style="color: rgb(77, 26, 123);">Contact Us</h1>
+                <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Silahkan tunggu dalam waktu 1x24 jam, admin akan segera menghubungi anda secepatnya</h3>
+                </header>
+                <br>
+                <article class="login-login">
+                    <label>Email : </label>
+                    <input type="email" id="form-username" placeholder="ex: Dominic76@gmail.com" required>
+                    <br>
+                    <br>
+                    <label>Pass : </label>
+                    <input type="text" id="form-password" placeholder="input your Password" required>
+                    <p>Apa tujuanmu traveling saat ini?</p>
+                    <select>
+                        <option>!!!---Pilih salah satu---!!!</option>
+                        <option>Liburan</option>
+                        <option>Keperluan pribadi</option>
+                        <option>Bulan madu</option>
+                        <option>Bikin rumah di beda Provinsi/Pulau</option>
+                    </select>
+                    <br>
+                </article>
+                <br>
+                <article class="login-signup">
+                    <p>Belum punya akun?</p>
+                    <p>Rencanakan liburanmu disini</p>
+                    <button type="button" id="send-button">Sign Up</button>
+                    <button type="button" id="send-button">Log In</button>
+                </article>
+                 </header>
+            </div>
+        </form>
+        <script src="js/script.js"></script> 
+        <hr/>
+        <section class="our-package">Our Package</section>
+        <hr/>
+        <div class="container">
+            <div class="box1"><i></i>
+                <h2><img src="assets/logo kilat.png" alt="png" height="5%" width="5%">Bali</h2>
+                <p>Tempat yang indah dan sering dikunjungi warga pulau jawa dan warga luar negeri hanya untuk menghabiskan waktu menikmati keindahan di Bali.</p>
+            </div>
+            <div class="box2"><i></i>
+                <h2><img src="assets/logo kilat.png" alt="png" height="5%" width="5%">Lombok[NTB]</h2>
+                <p>Memiliki Sirkuit balap yang bernama "MANDALIKA" dimana Sirkuit tersebut udah terkenal mendunia hingga sudah sering digunakan untuk kompetisi ajang Moto GP salah satunya.</p>
+            </div>
+            <div class="box3"><i></i>
+                <h2><img src="assets/logo kilat.png" alt="png" height="5%" width="5%">Bandung</h2>
+                <p>Tempat yang banyak dikunjungi dan ga kalah indah sama wisatanya, yaitu salah satunya Lembang dimana tempas tersebut menadji tempat favorit bagi wistawan untuk menikmati indahnya pegunungan yang dingin.</p>
+            </div>
+            <div class="box4"><i></i>
+                <h2><img src="assets/logo kilat.png" alt="png" height="5%" width="5%">Bogor</h2>
+                <p>Tempat yang ga kalah bagus kaya wisata lainnya, wisata ini sering dikunjungi wisatawan khususnya dari jakarta hanya untuk menikmati wisata disini, salah satunya Puncak di daerah Bogor karena suasananya indah.</p>
+            </div>
+            <div class="box5"><i></i>
+                <h2><img src="assets/logo kilat.png" alt="png" height="5%" width="5%">Yogyakarta</h2>
+                <p>Wisata paling nyaman se-pulau jawa dimana kota ini disebut kota pelajar yang ga kalah banyak dikunjungi di berbagai provinsi. Yang paling disukai wisatawan adalah oleh-oleh khas jogja seperti bakpia jogja yang terkenal di pulau jawa</p>
+            </div>
+            <div class="box6"><i></i>
+                <h2><img src="assets/logo kilat.png" alt="png" height="5%" width="5%">Bromo</h2>
+                <p>Wisata yang ga kalah indah sama wisata lainnya, banyak wisatawan banyak yang rela menghabiskan banyak waktu hanya demi menikmati indahnya pegunungan di Bromo karena suasananya bisa dibilang bagus. </p>
+            </div>
+        </div>
 </html>
